@@ -270,7 +270,7 @@ section #hero .container {
 
 .product-description-block .selector fieldset {
   display: flex;
-  border: none;
+  border: none ;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -282,7 +282,7 @@ section #hero .container {
   width: 100%;
   height: 40px;
   border-radius: 5px;
-  border: 1px solid #0f0f0f;
+  border: 1px solid #000000;  /* el borde de botón de selección de color y tamaño*/
   padding: 0 10px;
 }
 
@@ -330,32 +330,51 @@ section #hero .container {
   margin-right: 15px; /* Espacio entre el ícono y el texto */
 }
 
-.product-purchase-options {
 
-  background-color: #222ed3; /*Color de la caja de comprar*/
+
+/* Estilos para el botón "Agregar al carrito"  y comprar*/
+button{
+  
+  background-color: #ffffff;; /*Color de la caja de comprar*/
   color: #070707; /* Color del texto */
   padding: 5px 10px; /* Espaciado interno */
   font-size: 16px; /* Tamaño del texto */
   border: hsl(from color h s l); 
   border-radius: 4px; 
   cursor: pointer;
+  margin-bottom: 5px; /*Espaciado de botón*/
+  margin-top: 20px;
   
+}
 
+.recomendados-titulo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.recomendados {
+  display: grid;
+  grid-template-columns: (4, 1fr);
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ajuste para que ocupe todo el ancho */
+}
+
+.columns-recomendados {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px; /* Máximo ancho para mantener el diseño centrado */
+  margin: 0 auto; /* Centra el contenido dentro del ancho máximo */
+  margin-bottom:10px ;
 }
 
 
-/* Estilos para el botón "Agregar al carrito" */
-button {
-  
-  background-color: #f3eeee; /*Color de la caja de comprar*/
-  color: #070707; /* Color del texto */
-  padding: 5px 10px; /* Espaciado interno */
-  font-size: 16px; /* Tamaño del texto */
-  border: hsl(from color h s l); 
-  border-radius: 4px; 
-  cursor: pointer;
-  margin-bottom: 15px; /*Espaciado de botón*/
-}
+
+
 
 /*botón de agregar al carrito Estilo hover para resaltar el botón cuando se pasa el mouse
 button:hover {
