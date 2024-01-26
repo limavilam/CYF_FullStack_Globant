@@ -1,0 +1,24 @@
+<form action="/submit-form" method="post">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message"></textarea>
+    <fieldset>
+        <legend>Edad</legend>
+        <div class="fieldset">
+        <input type="checkbox" tabindex="20" name="edad" value="20-39" />
+        20-39
+        </div>
+        <div class="fieldset">
+        <input type="checkbox" tabindex="21" name="edad" value="40-59" />
+        40-59
+        </div>
+        <div class="fieldset">
+        <input type="checkbox" tabindex="22" name="edad" value="60-79" />
+        60-79
+        </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+</form>
