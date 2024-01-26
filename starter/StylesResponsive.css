@@ -1,0 +1,367 @@
+body, html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px; /* Establecer un tamaño de fuente raíz */
+}
+
+/* Estructura del sitio */
+header {
+  border: 1px solid red;
+  height: 10%;
+  background-color: #ff3b3c;
+  display: flex;
+  flex-direction: column; /* Cambiar a disposición de columna en pantallas pequeñas */
+}
+
+.search {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.search .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search .form {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .form input {
+  height: 62px;
+  border-radius: 14px;
+  border: none;
+  width: 90%; /* Usar porcentaje para adaptarse al ancho de la pantalla */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.search .social ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.search .social ul li {
+  padding: 0 10px;
+}
+
+.nav {
+  padding: 10px 0;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li a {
+  color: white;
+  font-weight: 700;
+  text-align: right;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#hero {
+  border: 1px solid purple;
+  height: 340px;
+  background: url('../assets/hero_bg.png') top center;
+  background-size: cover;
+}
+
+main {
+  border: 1px;
+  height: auto;
+}
+
+footer {
+  border: 1px;
+  min-height: 368px;
+  background-color: #ff3b3c;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.columns-container .col ul {
+  list-style-type: none;
+  padding: 10;
+  margin-right: 5%; /* Usar porcentaje para adaptarse al ancho de la pantalla */
+}
+
+.columns-container .col ul li {
+  padding: 5px 0;
+}
+
+.columns-container .col ul li.col-main-item {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.columns-container .col ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright {
+  border-top: 1px solid #ba53fb;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 50px 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%; /* Usar porcentaje para adaptarse al ancho de la pantalla */
+  margin: 0 auto;
+  border: 1px;
+  height: inherit;
+  min-height: inherit;
+}
+
+/* Card de producto */
+.product-card {
+  background-color: #f0f0f0;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.product-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.product-info {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-title {
+  font-size: 2em; /* Tamaño relativo */
+  font-weight: 700;
+  line-height: 22.27px;
+  word-wrap: break-word;
+  display: block;
+}
+
+.product-description {
+  font-size: 12px;
+  font-weight: 400;
+  color: #383838;
+  margin-bottom: 6px;
+}
+
+.product-price-block {
+  display: flex;
+  margin: 5px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price-block .price {
+  font-size: 22px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.product-price-block .discount {
+  font-size: 12px;
+  font-weight: 700;
+  color: #428f13;
+}
+
+.product-tax-policy {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+/* Aplicar Grid al contenedor de productos */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+section #hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title-container span {
+  display: block;
+  color: white;
+  font-weight: 700;
+}
+
+.title-container span:first-child {
+  font-size: 40px;
+}
+
+.title-container span:last-child {
+  font-size: 100px;
+  line-height: 80px;
+}
+
+.product-images-block {
+  max-width: 100%;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  margin: 10px;
+  padding: 20px;
+  background-color: #a98bf0;
+  border-radius: 10px;
+}
+
+.product-images-block .thumbnail-container {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.product-images-block .thumbnail-container img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.product-description-block .title {
+  color: #ae03c5;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+  word-wrap: break-word;
+}
+
+.product-description-block .selector fieldset {
+  display: flex;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.product-description-block .selector select {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding: 0 10px;
+}
+
+.product-description-block .description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.product-checkout-block {
+  flex: 1;
+  display: flex;
+}
+
+.checkout-container {
+  background-color: #ebebeb;
+  padding: 33px;
+  border-radius: 2px;
+}
+
+.checkout-total-label {
+  color: #ff3b3c;
+}
+
+.checkout-total-price {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.checkout-description {
+  line-height: 20.4px;
+  word-wrap: break-word;
+}
+
+.checkout-policy-list {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+.checkout-policy-list li {
+  display: flex;
+  margin: 15px 0;
+}
+
+.checkout-policy-list li .policy-icon {
+  margin-right: 15px;
+}
+
+/* Estilos para el botón "Agregar al carrito" y comprar*/
+button {
+  background-color: #ffffff;
+  color: #070707;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.recomendados-titulo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.recomendados {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.columns-recomendados {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
