@@ -26,25 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Hacer clic en un botón para activar el prompt
     var botonPrompt = document.getElementById('botonPrompt');
 
-    // Declarar variable 'producto'
-var producto = "Camiseta";
-
-// Declarar variable 'cantidadProducto'
-var cantidadProducto = 50; // Por ejemplo, inicialmente hay 50 camisetas en stock
-
-// Simular una venta reduciendo la cantidad de productos vendidos
-var cantidadVenta = 5; // Por ejemplo, se vendieron 5 camisetas
-cantidadProducto -= cantidadVenta;
-
-// Definir una variable 'maximoInventario'
-var maximoInventario = 100; // Por ejemplo, el máximo de camisetas permitido en el inventario es 100
-
-// Mostrar resultados en la consola
-console.log("Producto: " + producto);
-console.log("Cantidad en stock después de la venta: " + cantidadProducto);
-console.log("Máximo permitido en el inventario: " + maximoInventario);
-
-
     if (botonPrompt) {
         botonPrompt.addEventListener('click', function() {
             var usuario = prompt("Ingresa tu nombre:"); //Lo que sale cuando le doy click 
@@ -63,7 +44,7 @@ console.log("Máximo permitido en el inventario: " + maximoInventario);
 
             //Muestra ventana emergente 
             alert("Hola, " + (usuario ? usuario : "Usuario") + "! Bienvenido al mundo de JavaScript.");
-            alert("Usuario, tienes " + (edadActual ? edadActual : "años") + " años" )
+            alert("Usuario, tienes " + (edadActual ? edadActual : " años") + " años" )
         });
     }
 });
